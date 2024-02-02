@@ -15,7 +15,8 @@ console.log(khan3);  // Output: contain variable
 
  
 // there have some type of data type which I right in following
-let first = 'string';
+let first = 'string';  // I can also write the data type like following.
+let first2 = new String(first)
 let two = 12;
 let three = BigInt(56)
 let four = true
