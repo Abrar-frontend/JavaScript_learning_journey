@@ -14,9 +14,10 @@ console.log(khan3);  // Output: contain variable
 
 
  
-// there have some type of data type which I right in following
-let first = 'string';  // I can also write the data type like following.
-let first2 = new String(first)
+// there have some type of primitive data type which I write the following.
+
+let first = 'string';  // I can also write the data type like 
+let first2 = new String(first)  // And remmber that string is immutable
 let two = 12;
 let three = BigInt(56)
 let four = true
@@ -29,7 +30,7 @@ console.log(typeof four)   // Output: boolean
 console.log(typeof five)  // Output: object because it specially data type it's mean meanty object.
 console.log(typeof six)  // Output: undefinde mean nothing have assign value to it.
 
-// There have refrence data type which is include Array Obj and Function
+// There have refrence data type too which is include Array Obj and Function
 
 
 
