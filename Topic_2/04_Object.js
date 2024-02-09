@@ -44,3 +44,4 @@ const obj2 = {
 
 // const {courseInstructor : instructor} = obj5;
 // console.log(instructor)
+
