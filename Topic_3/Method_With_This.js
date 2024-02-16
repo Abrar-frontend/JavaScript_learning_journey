@@ -34,7 +34,7 @@ const four = () => {
 // const addTwoNo = (num1 , num2) => num1 + num2
 // const addTwoNo = (num1 , num2) => (num1 + num2)
 // const addTwoNo = (num1 , num2) => {key : 'value'}
-console.log(addTwoNo(25,50)) 
+// console.log(addTwoNo(25,50)) 
 // let arr1 = [1,2,3,4,5]
 // arr1.forEach( (itm) => {
 //     console.log(itm)
