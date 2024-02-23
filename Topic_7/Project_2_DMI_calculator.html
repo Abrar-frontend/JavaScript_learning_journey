@@ -63,16 +63,20 @@
     button.addEventListener('click',Weight)
 
     function Weight(){
-        console.log('click')
+    
         // console.log(input[0].value,
         // input[1].value)
         let firValue = parseInt(input[0].value)
         let secValue = parseInt(input[1].value)
-        console.log(firValue,secValue)
-        if(firValue == NaN && secValue == NaN){
-            ans.innerHTML = 'Please enter valid Number'
+
+        // console.log(firValue,secValue)
+
+        if(firValue == NaN && firValue == '' && firValue < 0){
+            ans.innerHTML = 'Please enter valid Height'
+        }else if(secValue == NaN && secValue == '' && secValue < 0){
+            ans.innerHTML = 'Please enter valid Weight'
         }else{
-            const result = firValue / secValue
+            const result = (secValue / ((firValue * firValue) / 10000)).toFixed(2);
             ans.innerHTML = `Your Weight ${result}`
         }
 
