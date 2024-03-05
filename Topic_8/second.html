@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript And Event</title>
+</head>
+<body>
+    
+    <h2> JavaScript And Event </h2>
+    <button>Stop</button>
+</body>
+<script>
+    const textChange = () => {
+        document.querySelector('h2').innerHTML = 'Text is Changed'
+    }
+
+    const ChangeMe = setTimeout(textChange,2000)
+
+    document.querySelectorAll('button')[0].addEventListener('click', () => {
+        clearTimeout(ChangeMe);
+        console.log('Text is never changed now')
+    })
+</script>
+</html>
