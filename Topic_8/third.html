@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 3</title>
+</head>
+<body>
+    <h1> Khan Aur JavaScript</h1>
+    <button> Start </button>
+    <button> Stop </button>
+</body>
+<script>
+    const dateFunc = (para) => {
+        console.log(para , Date.now())
+    }
+    const inTervalId = setInterval(dateFunc , 2000 , 'Now that is')
+
+    clearInterval(inTervalId)
+</script>
+</html>
