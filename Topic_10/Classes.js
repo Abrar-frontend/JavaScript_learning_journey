@@ -18,6 +18,9 @@
 // console.log(newUser.encryptedPassword())
 // console.log(newUser.changeUser())
 
+
+// Behind the scence in class happend that 
+
 function User(userName , email , password){
     this.userName = userName;
     this.email = email;
