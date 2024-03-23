@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Api Calls by XmlRequest </title>
+</head>
+<body>
+    <p> 0:- Unset Client has been Created. not call open yet</p>
+
+    <p>1:- open has been called</p>
+
+    <p>2:- HEADERS_RECEIVED  .  send has been called. </p>
+
+    <p>3:- Loading Downloading; responseText hold partial data.</p>
+
+    <p>4:-  Done the operation is Compeleted</p>
+</body>
+<script>
+    const url = 'https://api.github.com/users/hiteshchoudhary'
+
+    const xml = new XMLHttpRequest()
+
+    xml.open('GET',url)
+
+    xml.onreadystatechange = function(){
+        console.log(xml.readyState)
+        if(xml.readyState == 4){
+            const data = JSON.parse(xml.responseText)
+            console.log(data)
+        }
+    }
+
+    xml.send()
+</script>
+</html>
